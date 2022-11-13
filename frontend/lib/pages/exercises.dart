@@ -18,7 +18,7 @@ class _ExercisesPageState extends State<ExercisesPage> {
           children: <Widget>[
             DrawerHeader(
               decoration: BoxDecoration(
-                color: Colors.green,
+                color: Color.fromRGBO(161, 215, 233, 1),
               ),
               child: Text(
                 'LOGO',
