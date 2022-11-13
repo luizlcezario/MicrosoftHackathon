@@ -67,15 +67,14 @@ class _MyHomePageState extends State<MyHomePage> {
                   );
                 }),
             ListTile(
-              leading: Icon(Icons.data_exploration_rounded),
-              title: Text('Exercícios'),
-              onTap: () {
+                leading: Icon(Icons.data_exploration_rounded),
+                title: Text('Exercícios'),
+                onTap: () {
                   Navigator.push(
                     context,
                     MaterialPageRoute(builder: (context) => ExercisesPage()),
                   );
-              }
-            ),
+                }),
           ],
         ),
       ),
@@ -92,7 +91,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 Row(
                   children: [
                     CircleAvatar(
-                      backgroundImage: AssetImage('assets/images/Avatar.png'),
+                      backgroundImage: AssetImage('assets/llima-ce.png'),
                     )
                   ],
                 )

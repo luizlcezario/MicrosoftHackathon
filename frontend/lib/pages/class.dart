@@ -16,7 +16,7 @@ class _ClassPageState extends State<ClassPage> {
         child: ListView(
           padding: EdgeInsets.zero,
           children: <Widget>[
-               DrawerHeader(
+            DrawerHeader(
               decoration: BoxDecoration(
                 color: Colors.green,
               ),
@@ -38,18 +38,16 @@ class _ClassPageState extends State<ClassPage> {
                   );
                 }),
             ListTile(
-                leading: Icon(Icons.class_),
-                title: Text('Salas'),
-                  ),
+              leading: Icon(Icons.class_),
+              title: Text('Salas'),
+            ),
             ListTile(
-              leading: Icon(Icons.data_exploration_rounded),
-              title: Text('Exercícios'),
+                leading: Icon(Icons.data_exploration_rounded),
+                title: Text('Exercícios'),
                 onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => ExercisesPage()));
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => ExercisesPage()));
                 }),
-           
           ],
         ),
       ),
@@ -62,15 +60,7 @@ class _ClassPageState extends State<ClassPage> {
             Container(
               margin: EdgeInsets.only(right: 20, left: 20, top: 20),
               color: Color.fromRGBO(161, 215, 233, 1),
-              child: Column(children: [
-                Row(
-                  children: [
-                    CircleAvatar(
-                      backgroundImage: AssetImage('assets/llima-ce.jpeg'),
-                    )
-                  ],
-                )
-              ]),
+              child: Column(children: []),
             ),
           ],
         ),

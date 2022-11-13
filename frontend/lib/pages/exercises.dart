@@ -62,15 +62,7 @@ class _ExercisesPageState extends State<ExercisesPage> {
             Container(
               margin: EdgeInsets.only(right: 20, left: 20, top: 20),
               color: Color.fromRGBO(161, 215, 233, 1),
-              child: Column(children: [
-                Row(
-                  children: [
-                    CircleAvatar(
-                      backgroundImage: AssetImage('assets/exercise1.jpeg'),
-                    )
-                  ],
-                )
-              ]),
+              child: Column(children: []),
             ),
           ],
         ),
