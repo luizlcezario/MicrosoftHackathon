@@ -55,7 +55,7 @@ class _ClassPageState extends State<ClassPage> {
                 Row(
                   children: [
                     CircleAvatar(
-                      backgroundImage: AssetImage('assets/images/Avatar.png'),
+                      backgroundImage: AssetImage('assets/llima-ce.jpeg'),
                     )
                   ],
                 )
