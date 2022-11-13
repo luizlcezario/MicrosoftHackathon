@@ -1,22 +1,22 @@
 import 'package:flutter/material.dart';
 import '../main.dart';
-import 'exercises.dart';
+import 'class.dart';
 
-class ClassPage extends StatefulWidget {
-  const ClassPage({super.key});
+class ExercisesPage extends StatefulWidget {
+  const ExercisesPage({super.key});
 
   @override
-  State<ClassPage> createState() => _ClassPageState();
+  State<ExercisesPage> createState() => _ExercisesPageState();
 }
 
-class _ClassPageState extends State<ClassPage> {
+class _ExercisesPageState extends State<ExercisesPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       drawer: Drawer(
         child: ListView(
           padding: EdgeInsets.zero,
           children: <Widget>[
-               DrawerHeader(
+            DrawerHeader(
               decoration: BoxDecoration(
                 color: Colors.green,
               ),
@@ -40,21 +40,21 @@ class _ClassPageState extends State<ClassPage> {
             ListTile(
                 leading: Icon(Icons.class_),
                 title: Text('Salas'),
-                  ),
-            ListTile(
-              leading: Icon(Icons.data_exploration_rounded),
-              title: Text('Exercícios'),
                 onTap: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => ExercisesPage()));
+                    MaterialPageRoute(builder: (context) => ClassPage()),
+                  );
                 }),
-           
+            ListTile(
+              leading: Icon(Icons.data_exploration_rounded),
+              title: Text('Exercícios'),
+            ),
           ],
         ),
       ),
       appBar: AppBar(
-        title: Text('Salas'),
+        title: Text('Exercicíos'),
       ),
       body: Center(
         child: Column(
@@ -66,7 +66,7 @@ class _ClassPageState extends State<ClassPage> {
                 Row(
                   children: [
                     CircleAvatar(
-                      backgroundImage: AssetImage('assets/llima-ce.jpeg'),
+                      backgroundImage: AssetImage('assets/exercise1.jpeg'),
                     )
                   ],
                 )
