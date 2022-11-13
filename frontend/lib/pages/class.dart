@@ -15,11 +15,43 @@ class _ClassPageState extends State<ClassPage> {
       'name': "Sala 1",
       'student': [
         {
-          "name": "luiz lima a",
+          "name": "Ana Clara",
           "img": "img",
         },
         {
-          "name": "luiz lima b",
+          "name": "Beatriz",
+          "img": "img",
+        },
+        {
+          "name": "Eduardo",
+          "img": "img",
+        },
+        {
+          "name": "Fabrício",
+          "img": "img",
+        },
+        {
+          "name": "Felipe",
+          "img": "img",
+        },
+        {
+          "name": "Maria Eduarda",
+          "img": "img",
+        },
+        {
+          "name": "João Vitor",
+          "img": "img",
+        },
+        {
+          "name": "Matheus",
+          "img": "img",
+        },
+        {
+          "name": "Júlia",
+          "img": "img",
+        },
+        {
+          "name": "Gustavo",
           "img": "img",
         },
       ]
@@ -28,11 +60,43 @@ class _ClassPageState extends State<ClassPage> {
       'name': "Sala 2",
       'student': [
         {
-          "name": "luiz lima z",
+          "name": "Thais",
           "img": "img",
         },
         {
-          "name": "luiz lima c",
+          "name": "Victor",
+          "img": "img",
+        },
+        {
+          "name": "Michael",
+          "img": "img",
+        },
+        {
+          "name": "Vitória",
+          "img": "img",
+        },
+        {
+          "name": "Ana Paula",
+          "img": "img",
+        },
+        {
+          "name": "Alan",
+          "img": "img",
+        },
+        {
+          "name": "Jorge",
+          "img": "img",
+        },
+        {
+          "name": "Rógerio",
+          "img": "img",
+        },
+        {
+          "name": "Gabriel",
+          "img": "img",
+        },
+        {
+          "name": "Mariana",
           "img": "img",
         },
       ]
