@@ -5,8 +5,8 @@ Desenvolvedores: João Vitor Sant' Anna, Maria Eduarda Dionisio, Fabricio Esper,
 Solução Proposta:<br>
 Vídeo Pitch: <br>
 Vídeo Demo: <br>
-Apresentação: <br>
-Repositório do Github: <br>
+Apresentação: <a href="https://1drv.ms/p/s!AnMhFuo3XQwlxTNQos-wZdrVZ-e0?e=RZzdAd">Link</a><br>
+Repositório do Github: <a href="#">Link</a> <br>
 Link da Solução: <br>
 
 
