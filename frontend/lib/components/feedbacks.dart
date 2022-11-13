@@ -1,16 +1,21 @@
 import 'package:flutter/material.dart';
 
 class FeedBacks extends StatefulWidget {
-  const FeedBacks(
-      {super.key,
-      required this.name,
-      required this.image,
-      required this.text,
-      required this.score});
+  FeedBacks({
+    super.key,
+    required this.name,
+    required this.image,
+    required this.text,
+    required this.score,
+    this.avaliator: "",
+    this.project: "",
+  });
 
   final String name;
   final String image;
   final String text;
+  String avaliator;
+  String project;
   final int score;
   @override
   State<FeedBacks> createState() => _FeedBakcksState();
@@ -55,9 +60,25 @@ class _FeedBakcksState extends State<FeedBacks> {
               Icon(Icons.face_outlined),
               Text(widget.text),
             ],
-            
           ),
         ),
+        widget.avaliator != "" && widget.project != ""
+            ? Container(
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(5),
+                  color: Colors.white,
+                ),
+                margin: EdgeInsets.all(5),
+                padding: EdgeInsets.all(10),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Text("Avaliado por: " + widget.avaliator),
+                    Text("Projeto: " + widget.avaliator),
+                  ],
+                ),
+              )
+            : Container(),
       ]),
     );
   }

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:frontend/pages/students_page.dart';
 import '../components/sanduiche.dart';
+import './students_page.dart';
 
 class ClassPage extends StatefulWidget {
   const ClassPage({super.key});
@@ -96,18 +98,20 @@ class _ClassPageState extends State<ClassPage> {
                   direction: Axis.vertical,
                   children: e["student"].map<Widget>((aluno) {
                     return e['name'] == dropdownValue
-                        ? Container(
-                            margin:
-                                EdgeInsets.only(right: 20, left: 20, top: 20),
-                            padding: EdgeInsets.all(10),
-                            decoration: BoxDecoration(
-                              color: Color.fromRGBO(161, 215, 233, 1),
-                              borderRadius: BorderRadius.circular(10),
-                            ),
+                        ? TextButton(
+                            onPressed: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => StudentPage(
+                                        name: aluno['name'],
+                                        img: aluno['img'])),
+                              );
+                            },
                             child: Row(
                               children: [
                                 CircleAvatar(
-                                  backgroundImage: AssetImage(aluno['img']),
+                                  backgroundImage: NetworkImage(aluno['img']),
                                 ),
                                 Container(
                                   margin: EdgeInsets.only(left: 20),
