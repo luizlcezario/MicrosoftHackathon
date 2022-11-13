@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'pages/class.dart';
-import 'pages/exercises.dart';
+import 'components/sanduiche.dart';
 import 'components/feedbacks.dart';
 
 void main() {
@@ -33,46 +32,11 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: Drawer(
-        child: ListView(
-          padding: EdgeInsets.zero,
-          children: <Widget>[
-            DrawerHeader(
-              decoration: BoxDecoration(
-                color: Color.fromRGBO(161, 215, 233, 1),
-              ),
-              child: Text(
-                'LOGO',
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 24,
-                ),
-              ),
-            ),
-            ListTile(
-                leading: Icon(Icons.class_),
-                title: Text('Aulas'),
-                onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => ClassPage()),
-                  );
-                }),
-            ListTile(
-                leading: Icon(Icons.data_exploration_rounded),
-                title: Text('Exercícios'),
-                onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => ExercisesPage()),
-                  );
-                }),
-          ],
-        ),
-      ),
+      drawer: Sanduiche(path: 'Feedback'),
       appBar: AppBar(
-        title: Text("Logo"),
-      ),
+          title: Center(
+        child: Image(width: 100, image: AssetImage('assets/Logo.png')),
+      )),
       body: Center(
         child: Column(
           children: <Widget>[

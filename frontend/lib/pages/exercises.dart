@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import '../main.dart';
-import 'class.dart';
+import '../components/sanduiche.dart';
 
 class ExercisesPage extends StatefulWidget {
   const ExercisesPage({super.key});
@@ -12,47 +11,7 @@ class ExercisesPage extends StatefulWidget {
 class _ExercisesPageState extends State<ExercisesPage> {
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: Drawer(
-        child: ListView(
-          padding: EdgeInsets.zero,
-          children: <Widget>[
-            DrawerHeader(
-              decoration: BoxDecoration(
-                color: Color.fromRGBO(161, 215, 233, 1),
-              ),
-              child: Text(
-                'LOGO',
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 24,
-                ),
-              ),
-            ),
-            ListTile(
-                leading: Icon(Icons.class_),
-                title: Text('Feedback'),
-                onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => MyHomePage()),
-                  );
-                }),
-            ListTile(
-                leading: Icon(Icons.class_),
-                title: Text('Salas'),
-                onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => ClassPage()),
-                  );
-                }),
-            ListTile(
-              leading: Icon(Icons.data_exploration_rounded),
-              title: Text('Exercícios'),
-            ),
-          ],
-        ),
-      ),
+      drawer: Sanduiche(path: 'Feedback'),
       appBar: AppBar(
         title: Text('Exercicíos'),
       ),
