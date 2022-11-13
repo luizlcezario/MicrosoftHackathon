@@ -128,6 +128,45 @@ class _ClassPageState extends State<ClassPage> {
             color: Colors.black,
             thickness: 1,
           ),
+          Flex(
+            direction: Axis.vertical,
+            children: salas.map<Widget>((e) {
+              return Flex(
+                  direction: Axis.vertical,
+                  children: e["student"].map<Widget>((aluno) {
+                    return e['name'] == dropdownValue
+                        ? Container(
+                            margin: EdgeInsets.only(right: 20, left: 20),
+                            child: Row(
+                              children: [
+                                Container(
+                                  width: 100,
+                                  height: 100,
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(100),
+                                    color: Color.fromRGBO(161, 215, 233, 1),
+                                  ),
+                                  child: Center(
+                                    child: Text(
+                                      aluno["name"],
+                                      style: TextStyle(color: Colors.black),
+                                    ),
+                                  ),
+                                ),
+                                Container(
+                                  margin: EdgeInsets.only(top: 10),
+                                  child: Text(
+                                    aluno["name"],
+                                    style: TextStyle(color: Colors.black),
+                                  ),
+                                )
+                              ],
+                            ),
+                          )
+                        : Container();
+                  }).toList());
+            }).toList(),
+          )
         ]),
       ), // This trailing comma makes auto-formatting nicer for build methods.
     );

@@ -55,6 +55,7 @@ class _FeedBakcksState extends State<FeedBacks> {
               Icon(Icons.face_outlined),
               Text(widget.text),
             ],
+            
           ),
         ),
       ]),
