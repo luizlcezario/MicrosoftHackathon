@@ -37,7 +37,8 @@ class _MyHomePageState extends State<MyHomePage> {
           title: Center(
         child: Image(width: 100, image: AssetImage('assets/Logo.png')),
       )),
-      body: Center(
+      body: SingleChildScrollView(
+        
         child: Column(
           children: <Widget>[
             FeedBacks(
