@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'pages/class.dart';
 import 'pages/exercises.dart';
+import 'components/feedbacks.dart';
 
 void main() {
   runApp(const MyApp());
@@ -75,46 +76,26 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Center(
         child: Column(
           children: <Widget>[
-            Container(
-              margin: EdgeInsets.only(right: 40, left: 40, top: 20),
-              padding: EdgeInsets.all(10),
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(15),
-                color: Color.fromRGBO(161, 215, 233, 1),
-              ),
-              child: Column(children: [
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
-                    CircleAvatar(
-                      backgroundImage: AssetImage('assets/llima-ce.jpeg'),
-                    ),
-                    Text(
-                      'Luiz Lima',
-                      style: TextStyle(
-                        fontSize: 20,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                  ],
-                ),
-                Container(
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(5),
-                    color: Colors.white,
-                  ),
-                  margin: EdgeInsets.all(5),
-                  padding: EdgeInsets.all(10),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: [
-                      Icon(Icons.face_outlined),
-                      Text('Gostei da avalicao prof'),
-                    ],
-                  ),
-                ),
-              ]),
-            ),
+            FeedBacks(
+                name: "Luiz Lima",
+                image: 'assets/llima-ce.jpeg',
+                text: 'gostei muito da aula prof<3',
+                score: 10),
+            FeedBacks(
+                name: "Luiz Lima",
+                image: 'assets/llima-ce.jpeg',
+                text: 'gostei muito da aula prof<3',
+                score: 10),
+            FeedBacks(
+                name: "Luiz Lima",
+                image: 'assets/llima-ce.jpeg',
+                text: 'gostei muito da aula prof<3',
+                score: 10),
+            FeedBacks(
+                name: "Luiz Lima",
+                image: 'assets/llima-ce.jpeg',
+                text: 'gostei muito da aula prof<3',
+                score: 10),
           ],
         ),
       ), // This trailing comma makes auto-formatting nicer for build methods.
