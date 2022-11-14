@@ -89,16 +89,14 @@ class _StudentPageState extends State<StudentPage> {
         child: Column(children: <Widget>[
           Center(
               child: Image(
-            image: NetworkImage(widget.img),
+            image: AssetImage("assets/avatar.png"),
             fit: BoxFit.fitHeight,
             height: 300,
           )),
           Column(
             children: student['feedbacks'].map<Widget>((feed) {
               return FeedBacks(
-                  image: widget.img == ""
-                      ? "https://i.pinimg.com/originals/99/4c/ca/994ccaef22db396d4d05d569ec35a207.png"
-                      : widget.img,
+                  image: widget.img == "" ? "assets/avatar.png" : widget.img,
                   name: widget.name,
                   score: feed["score"],
                   text: feed["text"],

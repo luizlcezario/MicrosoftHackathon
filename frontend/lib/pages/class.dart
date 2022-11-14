@@ -184,19 +184,15 @@ class _ClassPageState extends State<ClassPage> {
                                       builder: (context) => StudentPage(
                                           name: aluno['name'],
                                           img: aluno['img'] == ''
-                                              ? "https://i.pinimg.com/originals/99/4c/ca/994ccaef22db396d4d05d569ec35a207.png"
+                                              ? "assets/avatar.png"
                                               : aluno['img'])),
                                 );
                               },
                               child: Row(
                                 children: [
                                   CircleAvatar(
-                                    backgroundImage: NetworkImage(aluno[
-                                                'img'] ==
-                                            ""
-                                        ? "https://i.pinimg.com/originals/99/4c/ca/994ccaef22db396d4d05d569ec35a207.png"
-                                        : aluno['img']),
-                                  ),
+                                      backgroundImage:
+                                          AssetImage("assets/avatar.png")),
                                   Container(
                                     margin: EdgeInsets.only(left: 20),
                                     child: Text(

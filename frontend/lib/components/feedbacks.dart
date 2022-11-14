@@ -36,9 +36,7 @@ class _FeedBakcksState extends State<FeedBacks> {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             CircleAvatar(
-              backgroundImage: NetworkImage(widget.image == ""
-                  ? "https://i.pinimg.com/originals/99/4c/ca/994ccaef22db396d4d05d569ec35a207.png"
-                  : widget.image),
+              backgroundImage: AssetImage("./assets/avatar.png"),
             ),
             Text(
               widget.name,
