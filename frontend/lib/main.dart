@@ -42,32 +42,38 @@ class _MyHomePageState extends State<MyHomePage> {
           children: <Widget>[
             FeedBacks(
                 name: "Michael",
-                image: 'https://picsum.photos/200/300',
+                image:
+                    'https://live.staticflickr.com/65535/52497723656_7f881fe4d0_s.jpg',
                 text: 'Gostei muito da aula prof<3',
                 score: 10),
             FeedBacks(
                 name: "Gabriel",
-                image: '',
+                image:
+                    'https://live.staticflickr.com/65535/52498206100_6010ca666a_t.jpg',
                 text: 'Aula foi produtiva!',
                 score: 10),
             FeedBacks(
                 name: "Thais",
-                image: '',
+                image:
+                    'https://live.staticflickr.com/65535/52493008232_1dc3e0fcb3_s.jpg',
                 text: 'Obrigado pela ajuda :)',
                 score: 10),
             FeedBacks(
                 name: "Vitória",
-                image: '',
+                image:
+                    'https://live.staticflickr.com/65535/52495408113_2e65a6b5c4_s.jpg',
                 text: 'Me ajudou muito!',
                 score: 10),
             FeedBacks(
                 name: "Jorge",
-                image: '',
+                image:
+                    'https://live.staticflickr.com/65535/52498211570_7ed319a245_w.jpg',
                 text: 'Gostei da atividade!',
                 score: 10),
             FeedBacks(
                 name: "Mariana",
-                image: '',
+                image:
+                    'https://live.staticflickr.com/65535/52475686753_9c35a905d8.jpg',
                 text: 'Foi divertido c:',
                 score: 10),
           ],

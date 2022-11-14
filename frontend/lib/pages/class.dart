@@ -63,7 +63,8 @@ class _ClassPageState extends State<ClassPage> {
       'student': [
         {
           "name": "Thais",
-          "img": "",
+          "img":
+              "https://live.staticflickr.com/65535/52493008232_1dc3e0fcb3_s.jpg",
         },
         {
           "name": "Victor",
@@ -71,11 +72,13 @@ class _ClassPageState extends State<ClassPage> {
         },
         {
           "name": "Michael",
-          "img": "",
+          "img":
+              "https://live.staticflickr.com/65535/52497723656_7f881fe4d0_s.jpg",
         },
         {
           "name": "Vitória",
-          "img": "",
+          "img":
+              "https://live.staticflickr.com/65535/52495408113_2e65a6b5c4_s.jpg",
         },
         {
           "name": "Ana Paula",
@@ -87,7 +90,8 @@ class _ClassPageState extends State<ClassPage> {
         },
         {
           "name": "Jorge",
-          "img": "",
+          "img":
+              "https://live.staticflickr.com/65535/52498211570_7ed319a245_w.jpg",
         },
         {
           "name": "Rógerio",
@@ -95,11 +99,13 @@ class _ClassPageState extends State<ClassPage> {
         },
         {
           "name": "Gabriel",
-          "img": "",
+          "img":
+              "https://live.staticflickr.com/65535/52498206100_6010ca666a_t.jpg",
         },
         {
           "name": "Mariana",
-          "img": "",
+          "img":
+              "https://live.staticflickr.com/65535/52475686753_9c35a905d8.jpg",
         },
       ]
     }
