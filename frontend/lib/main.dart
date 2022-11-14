@@ -38,28 +38,37 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Image(width: 100, image: AssetImage('assets/Logo.png')),
       )),
       body: SingleChildScrollView(
-        
         child: Column(
           children: <Widget>[
             FeedBacks(
-                name: "Luiz Lima",
-                image: 'assets/llima-ce.jpeg',
-                text: 'gostei muito da aula prof<3',
+                name: "Michael",
+                image: 'https://picsum.photos/200/300',
+                text: 'Gostei muito da aula prof<3',
                 score: 10),
             FeedBacks(
-                name: "Luiz Lima",
-                image: 'assets/llima-ce.jpeg',
-                text: 'gostei muito da aula prof<3',
+                name: "Gabriel",
+                image: 'img',
+                text: 'Aula foi produtiva!',
                 score: 10),
             FeedBacks(
-                name: "Luiz Lima",
-                image: 'assets/llima-ce.jpeg',
-                text: 'gostei muito da aula prof<3',
+                name: "Thais",
+                image: 'img',
+                text: 'Obrigado pela ajuda :)',
                 score: 10),
             FeedBacks(
-                name: "Luiz Lima",
-                image: 'assets/llima-ce.jpeg',
-                text: 'gostei muito da aula prof<3',
+                name: "Vitória",
+                image: 'img',
+                text: 'Me ajudou muito!',
+                score: 10),
+            FeedBacks(
+                name: "Jorge",
+                image: 'img',
+                text: 'Gostei da atividade!',
+                score: 10),
+            FeedBacks(
+                name: "Mariana",
+                image: 'img',
+                text: 'Foi divertido c:',
                 score: 10),
           ],
         ),
