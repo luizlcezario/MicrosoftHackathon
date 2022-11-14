@@ -18,43 +18,43 @@ class _ClassPageState extends State<ClassPage> {
       'student': [
         {
           "name": "Ana Clara",
-          "img": "img",
+          "img": "",
         },
         {
           "name": "Beatriz",
-          "img": "img",
+          "img": "",
         },
         {
           "name": "Eduardo",
-          "img": "img",
+          "img": "",
         },
         {
           "name": "Fabrício",
-          "img": "img",
+          "img": "",
         },
         {
           "name": "Felipe",
-          "img": "img",
+          "img": "",
         },
         {
           "name": "Maria Eduarda",
-          "img": "img",
+          "img": "",
         },
         {
           "name": "João Vitor",
-          "img": "img",
+          "img": "",
         },
         {
           "name": "Matheus",
-          "img": "img",
+          "img": "",
         },
         {
           "name": "Júlia",
-          "img": "img",
+          "img": "",
         },
         {
           "name": "Gustavo",
-          "img": "img",
+          "img": "",
         },
       ]
     },
@@ -63,43 +63,43 @@ class _ClassPageState extends State<ClassPage> {
       'student': [
         {
           "name": "Thais",
-          "img": "img",
+          "img": "",
         },
         {
           "name": "Victor",
-          "img": "img",
+          "img": "",
         },
         {
           "name": "Michael",
-          "img": "img",
+          "img": "",
         },
         {
           "name": "Vitória",
-          "img": "img",
+          "img": "",
         },
         {
           "name": "Ana Paula",
-          "img": "img",
+          "img": "",
         },
         {
           "name": "Alan",
-          "img": "img",
+          "img": "",
         },
         {
           "name": "Jorge",
-          "img": "img",
+          "img": "",
         },
         {
           "name": "Rógerio",
-          "img": "img",
+          "img": "",
         },
         {
           "name": "Gabriel",
-          "img": "img",
+          "img": "",
         },
         {
           "name": "Mariana",
-          "img": "img",
+          "img": "",
         },
       ]
     }
@@ -113,7 +113,7 @@ class _ClassPageState extends State<ClassPage> {
       appBar: AppBar(
         title: Text('Salas'),
       ),
-      body: Center(
+      body: SingleChildScrollView(
         child: Column(children: <Widget>[
           Container(
             margin: EdgeInsets.only(right: 20, left: 20, top: 20),
@@ -162,35 +162,49 @@ class _ClassPageState extends State<ClassPage> {
                   direction: Axis.vertical,
                   children: e["student"].map<Widget>((aluno) {
                     return e['name'] == dropdownValue
-                        ? TextButton(
-                            onPressed: () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                    builder: (context) => StudentPage(
-                                        name: aluno['name'],
-                                        img: aluno['img'])),
-                              );
-                            },
-                            child: Row(
-                              children: [
-                                CircleAvatar(
-                                  backgroundImage: NetworkImage(aluno['img']),
-                                ),
-                                Container(
-                                  margin: EdgeInsets.only(left: 20),
-                                  child: Text(
-                                    aluno["name"],
-                                    style: TextStyle(color: Colors.black),
-                                  ),
-                                )
-                              ],
+                        ? Container(
+                            margin:
+                                EdgeInsets.only(right: 20, left: 20, top: 20),
+                            padding: EdgeInsets.all(5),
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(10),
+                              color: Color.fromRGBO(161, 215, 233, 1),
                             ),
-                          )
+                            child: TextButton(
+                              onPressed: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => StudentPage(
+                                          name: aluno['name'],
+                                          img: aluno['img'] == ''
+                                              ? "https://i.pinimg.com/originals/99/4c/ca/994ccaef22db396d4d05d569ec35a207.png"
+                                              : aluno['img'])),
+                                );
+                              },
+                              child: Row(
+                                children: [
+                                  CircleAvatar(
+                                    backgroundImage: NetworkImage(aluno[
+                                                'img'] ==
+                                            ""
+                                        ? "https://i.pinimg.com/originals/99/4c/ca/994ccaef22db396d4d05d569ec35a207.png"
+                                        : aluno['img']),
+                                  ),
+                                  Container(
+                                    margin: EdgeInsets.only(left: 20),
+                                    child: Text(
+                                      aluno["name"],
+                                      style: TextStyle(color: Colors.black),
+                                    ),
+                                  )
+                                ],
+                              ),
+                            ))
                         : Container();
                   }).toList());
             }).toList(),
-          )
+          ),
         ]),
       ), // This trailing comma makes auto-formatting nicer for build methods.
     );

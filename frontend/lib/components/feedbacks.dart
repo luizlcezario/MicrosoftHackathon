@@ -73,8 +73,16 @@ class _FeedBakcksState extends State<FeedBacks> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
-                    Text("Avaliado por: " + widget.avaliator),
-                    Text("Projeto: " + widget.avaliator),
+                    Text(
+                      "Avaliado por: " + widget.avaliator,
+                      style:
+                          TextStyle(fontWeight: FontWeight.bold, fontSize: 10),
+                    ),
+                    Text(
+                      "Projeto: " + widget.avaliator,
+                      style:
+                          TextStyle(fontWeight: FontWeight.bold, fontSize: 10),
+                    ),
                   ],
                 ),
               )

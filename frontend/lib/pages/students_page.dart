@@ -39,31 +39,48 @@ class _StudentPageState extends State<StudentPage> {
         "description": "badge 2 description",
         "image": "assets/badge2.png",
       },
+      {
+        "name": "badge 2",
+        "description": "badge 2 description",
+        "image": "assets/badge2.png",
+      },
+      {
+        "name": "badge 2",
+        "description": "badge 2 description",
+        "image": "assets/badge2.png",
+      },
     ],
   };
 
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: Sanduiche(path: 'Feedback'),
+      drawer: Sanduiche(path: widget.name),
       appBar: AppBar(
         title: Text('Exercicíos'),
       ),
       body: SingleChildScrollView(
         child: Column(children: <Widget>[
-          Stack(children: <Widget>[
-            Image(image: NetworkImage(widget.img)),
-            Center(child: Text(widget.name)),
-          ]),
+          Center(
+              child: Image(
+            image: NetworkImage(widget.img),
+            fit: BoxFit.fitHeight,
+            height: 300,
+          )),
           Column(
             children: student['feedbacks'].map<Widget>((feed) {
               return FeedBacks(
                   image: widget.img,
-                  name: widget.img,
+                  name: widget.name,
                   score: feed["score"],
                   text: feed["text"],
                   project: feed["project"],
                   avaliator: feed["avaliator"]);
             }).toList(),
+          ),
+          Divider(
+            height: 60,
+            color: Colors.black,
+            thickness: 1,
           ),
           SingleChildScrollView(
             scrollDirection: Axis.horizontal,
