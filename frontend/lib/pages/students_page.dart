@@ -1,6 +1,7 @@
 import "package:flutter/material.dart";
 import "../components/sanduiche.dart";
 import "../components/feedbacks.dart";
+import "./avaliation.dart";
 
 class StudentPage extends StatefulWidget {
   const StudentPage({super.key, required this.name, required this.img});
@@ -13,6 +14,8 @@ class StudentPage extends StatefulWidget {
 }
 
 class _StudentPageState extends State<StudentPage> {
+  bool avaliacao = false;
+
   Map student = {
     "feedbacks": [
       {
@@ -41,7 +44,7 @@ class _StudentPageState extends State<StudentPage> {
       },
       {
         'avaliator': 'Roberto',
-        "vv": "lista 2",
+        "project": "lista 2",
         "score": 10,
         "text": "Me ajudou muito!",
       },
@@ -131,11 +134,52 @@ class _StudentPageState extends State<StudentPage> {
             thickness: 1,
           ),
           Center(
-              child: Column(
-            children: [
-              Text("Projeto Atual"),
-            ],
-          ))
+              child: Container(
+                  alignment: Alignment.center,
+                  margin: EdgeInsets.all(10),
+                  padding: EdgeInsets.all(10),
+                  child: Column(children: [
+                    Text("Projeto Atual", style: TextStyle(fontSize: 30)),
+                    SizedBox(
+                      height: 20,
+                    ),
+                    Flex(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      direction: Axis.horizontal,
+                      children: [
+                        Icon(
+                          Icons.picture_as_pdf_outlined,
+                          size: 50,
+                          color: Colors.red,
+                        ),
+                        Text(
+                          "Lista_3.pdf",
+                          style: TextStyle(
+                              fontSize: 25, fontWeight: FontWeight.bold),
+                        ),
+                      ],
+                    ),
+                    SizedBox(
+                      height: 20,
+                    ),
+                    TextButton(
+                        style: TextButton.styleFrom(
+                            backgroundColor: Colors.blue,
+                            padding: EdgeInsets.all(20)),
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => Avaliation(
+                                        img: widget.img,
+                                        name: widget.name,
+                                      )));
+                        },
+                        child: Text(
+                          "Avaliar",
+                          style: TextStyle(fontSize: 20, color: Colors.white),
+                        )),
+                  ]))),
         ]),
       ), // This trailing comma makes auto-formatting nicer for build methods.
     );

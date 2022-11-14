@@ -47,27 +47,27 @@ class _MyHomePageState extends State<MyHomePage> {
                 score: 10),
             FeedBacks(
                 name: "Gabriel",
-                image: 'img',
+                image: '',
                 text: 'Aula foi produtiva!',
                 score: 10),
             FeedBacks(
                 name: "Thais",
-                image: 'img',
+                image: '',
                 text: 'Obrigado pela ajuda :)',
                 score: 10),
             FeedBacks(
                 name: "Vitória",
-                image: 'img',
+                image: '',
                 text: 'Me ajudou muito!',
                 score: 10),
             FeedBacks(
                 name: "Jorge",
-                image: 'img',
+                image: '',
                 text: 'Gostei da atividade!',
                 score: 10),
             FeedBacks(
                 name: "Mariana",
-                image: 'img',
+                image: '',
                 text: 'Foi divertido c:',
                 score: 10),
           ],
