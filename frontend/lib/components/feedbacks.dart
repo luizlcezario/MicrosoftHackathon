@@ -36,7 +36,9 @@ class _FeedBakcksState extends State<FeedBacks> {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             CircleAvatar(
-              backgroundImage: NetworkImage(widget.image),
+              backgroundImage: NetworkImage(widget.image == ""
+                  ? "https://i.pinimg.com/originals/99/4c/ca/994ccaef22db396d4d05d569ec35a207.png"
+                  : widget.image),
             ),
             Text(
               widget.name,
@@ -79,7 +81,7 @@ class _FeedBakcksState extends State<FeedBacks> {
                           TextStyle(fontWeight: FontWeight.bold, fontSize: 10),
                     ),
                     Text(
-                      "Projeto: " + widget.avaliator,
+                      "Projeto: " + widget.project,
                       style:
                           TextStyle(fontWeight: FontWeight.bold, fontSize: 10),
                     ),
