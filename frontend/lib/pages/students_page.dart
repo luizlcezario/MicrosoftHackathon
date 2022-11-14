@@ -41,7 +41,7 @@ class _StudentPageState extends State<StudentPage> {
       },
       {
         'avaliator': 'Roberto',
-        "project": "lista 2",
+        "vv": "lista 2",
         "score": 10,
         "text": "Me ajudou muito!",
       },

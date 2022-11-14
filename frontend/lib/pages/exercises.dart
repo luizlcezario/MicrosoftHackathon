@@ -11,7 +11,7 @@ class ExercisesPage extends StatefulWidget {
 class _ExercisesPageState extends State<ExercisesPage> {
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: Sanduiche(path: 'Feedback'),
+      drawer: Sanduiche(path: 'Exercicíos'),
       appBar: AppBar(
         title: Text('Exercicíos'),
       ),

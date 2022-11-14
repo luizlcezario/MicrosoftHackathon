@@ -79,7 +79,7 @@ class _FeedBakcksState extends State<FeedBacks> {
                           TextStyle(fontWeight: FontWeight.bold, fontSize: 10),
                     ),
                     Text(
-                      "Projeto: " + widget.avaliator,
+                      "Projeto: " + widget.project,
                       style:
                           TextStyle(fontWeight: FontWeight.bold, fontSize: 10),
                     ),
