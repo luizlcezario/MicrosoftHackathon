@@ -30,7 +30,7 @@ class _ClassPageState extends State<ClassPage> {
         },
         {
           "name": "Fabrício",
-          "img": "../../assets/images/profile.jpeg",
+          "img": "",
         },
         {
           "name": "Felipe",

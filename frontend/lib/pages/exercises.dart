@@ -9,6 +9,20 @@ class ExercisesPage extends StatefulWidget {
 }
 
 class _ExercisesPageState extends State<ExercisesPage> {
+  List exercise = [
+    {
+      "name": "lista 1",
+      "exercises": [
+        {
+          "header":
+              "Adriano tem 4 carrinhos. E Samuel tem 2. Quantos carrinhos os 2 tem juntos?",
+          "image": "./assets/images/lista1car.jpeg",
+          "answer": 6,
+        },
+      ],
+    },
+  ];
+
   Widget build(BuildContext context) {
     return Scaffold(
       drawer: Sanduiche(path: 'Feedback'),
