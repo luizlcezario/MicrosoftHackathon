@@ -56,7 +56,7 @@ class _StudentPageState extends State<StudentPage> {
     return Scaffold(
       drawer: Sanduiche(path: widget.name),
       appBar: AppBar(
-        title: Text('Exercicíos'),
+        title: Text(widget.name),
       ),
       body: SingleChildScrollView(
         child: Column(children: <Widget>[
@@ -69,7 +69,9 @@ class _StudentPageState extends State<StudentPage> {
           Column(
             children: student['feedbacks'].map<Widget>((feed) {
               return FeedBacks(
-                  image: widget.img,
+                  image: widget.img == ""
+                      ? "https://i.pinimg.com/originals/99/4c/ca/994ccaef22db396d4d05d569ec35a207.png"
+                      : widget.img,
                   name: widget.name,
                   score: feed["score"],
                   text: feed["text"],
@@ -99,6 +101,17 @@ class _StudentPageState extends State<StudentPage> {
               }).toList(),
             ),
           ),
+          Divider(
+            height: 60,
+            color: Colors.black,
+            thickness: 1,
+          ),
+          Center(
+              child: Column(
+            children: [
+              Text("Projeto Atual"),
+            ],
+          ))
         ]),
       ), // This trailing comma makes auto-formatting nicer for build methods.
     );
