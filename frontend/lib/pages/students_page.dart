@@ -16,16 +16,40 @@ class _StudentPageState extends State<StudentPage> {
   Map student = {
     "feedbacks": [
       {
-        'avaliator': 'Luiz Lima a',
+        'avaliator': 'João',
         "score": 10,
         "project": "lista 1",
-        "text": "gostei muito da aula prof<3",
+        "text": "Gostei muito da aula prof<3",
       },
       {
-        'avaliator': 'Luiz Lima a',
+        'avaliator': 'Maria',
         "project": "lista 1",
         "score": 10,
-        "text": "gostei muito da aula prof<3",
+        "text": "Aula foi produtiva!",
+      },
+      {
+        'avaliator': 'Daniel',
+        "project": "lista 2",
+        "score": 10,
+        "text": "Obrigado pela ajuda :)",
+      },
+      {
+        'avaliator': 'Alex',
+        "project": "lista 2",
+        "score": 10,
+        "text": "Foi divertido c:",
+      },
+      {
+        'avaliator': 'Roberto',
+        "project": "lista 2",
+        "score": 10,
+        "text": "Me ajudou muito!",
+      },
+      {
+        'avaliator': 'Júlia',
+        "project": "lista 2",
+        "score": 10,
+        "text": "Gostei da atividade :)",
       },
     ],
     "badges": [
