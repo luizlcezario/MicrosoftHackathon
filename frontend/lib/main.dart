@@ -34,9 +34,10 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       drawer: Sanduiche(path: 'Feedback'),
       appBar: AppBar(
+          toolbarHeight: 90,
           title: Center(
-        child: Image(width: 100, image: AssetImage('assets/Logo.png')),
-      )),
+            child: Image(width: 80, image: AssetImage('assets/Logo.png')),
+          )),
       body: SingleChildScrollView(
         child: Column(
           children: <Widget>[
