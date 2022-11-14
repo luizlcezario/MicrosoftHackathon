@@ -14,32 +14,27 @@ class Avaliation extends StatefulWidget {
 class _AvaliationState extends State<Avaliation> {
   List feedback = [
     {
-      "emoji":
-          "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/72/apple/325/partying-face_1f973.png",
+      "emoji": "assets/emoji1.png",
       'status': false,
       'value': "5",
     },
     {
-      "emoji":
-          "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/72/apple/325/beaming-face-with-smiling-eyes_1f601.png",
+      "emoji": "assets/emoji2.png",
       'status': false,
       'value': "4",
     },
     {
-      "emoji":
-          "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/72/apple/325/slightly-smiling-face_1f642.png",
+      "emoji": "assets/emoji3.png",
       'status': false,
       'value': "3",
     },
     {
-      "emoji":
-          "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/72/apple/325/pensive-face_1f614.png",
+      "emoji": "assets/emoji4.png",
       'status': false,
       'value': "2",
     },
     {
-      "emoji":
-          "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/72/apple/325/loudly-crying-face_1f62d.png",
+      "emoji": "assets/emoji5.png",
       'status': false,
       'value': "1",
     }
@@ -68,7 +63,7 @@ class _AvaliationState extends State<Avaliation> {
                         return Image(
                           width: 50,
                           height: 50,
-                          image: NetworkImage(
+                          image: AssetImage(
                             item["emoji"],
                           ),
                         );
