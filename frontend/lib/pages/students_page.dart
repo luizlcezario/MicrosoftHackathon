@@ -54,24 +54,24 @@ class _StudentPageState extends State<StudentPage> {
     ],
     "badges": [
       {
-        "name": "badge 1",
-        "description": "badge 1 description",
+        "name": "Badge Joaninha",
+        "description": "Tenha 3 proveitosas avaliações",
         "image": "assets/badge1.png",
       },
       {
-        "name": "badge 2",
-        "description": "badge 2 description",
+        "name": "Badge Fogo",
+        "description": "Consiga 3 Feedbacks divertidos",
         "image": "assets/badge2.png",
       },
       {
-        "name": "badge 2",
-        "description": "badge 2 description",
-        "image": "assets/badge2.png",
+        "name": "Badge Girassol",
+        "description": "Alcance 6 avaliações calorosas",
+        "image": "assets/badge3.png",
       },
       {
-        "name": "badge 2",
-        "description": "badge 2 description",
-        "image": "assets/badge2.png",
+        "name": "Badge Coração",
+        "description": "Consiga 6 Feedbacks amigáveis",
+        "image": "assets/badge4.png",
       },
     ],
   };
