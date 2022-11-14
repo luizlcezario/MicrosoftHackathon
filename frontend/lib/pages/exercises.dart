@@ -16,7 +16,7 @@ class _ExercisesPageState extends State<ExercisesPage> {
         {
           "header":
               "Adriano tem 4 carrinhos. E Samuel tem 2. Quantos carrinhos os 2 tem juntos?",
-          "image": "./assets/images/lista1car.png",
+          "image": "./assets/images/lista1.png",
           "answer": 6,
         },
       ],
@@ -26,9 +26,9 @@ class _ExercisesPageState extends State<ExercisesPage> {
       "exercises": [
         {
           "header":
-              "Adriano tem 4 carrinhos. E Samuel tem 2. Quantos carrinhos os 2 tem juntos?",
-          "image": "./assets/images/lista1car.png",
-          "answer": 6,
+              "Alice ganhou 3 anéis. Sua mãe comprou mais 5. Com quantos anéis Alice ficou?",
+          "image": "./assets/images/lista2.png",
+          "answer": 8,
         },
       ],
     },
@@ -37,12 +37,23 @@ class _ExercisesPageState extends State<ExercisesPage> {
       "exercises": [
         {
           "header":
-              "Adriano tem 4 carrinhos. E Samuel tem 2. Quantos carrinhos os 2 tem juntos?",
-          "image": "./assets/images/lista1car.png",
-          "answer": 6,
+              "Ana Clara comprou 6 doces. E já comeu 4. Quantos doces sobraram?",
+          "image": "./assets/images/lista3.png",
+          "answer": 2,
         },
       ],
     },
+    {
+      "name": "lista 4",
+      "exercises": [
+        {
+          "header":
+              "Luiz ganhou 4 livros. E já leu 1. Quantos livros restam ler?",
+          "image": "./assets/images/lista4.png",
+          "answer": 3,
+        },
+      ],
+    }
   ];
   var dropdownValue = "lista 1";
   Widget build(BuildContext context) {
@@ -132,7 +143,9 @@ class _ExercisesPageState extends State<ExercisesPage> {
                                               MaterialStateProperty.all<Color>(
                                                   Colors.blue)),
                                     ),
-                                    SizedBox(width: 20,),
+                                    SizedBox(
+                                      width: 20,
+                                    ),
                                     ElevatedButton(
                                       onPressed: () {},
                                       child: Text('Deletar'),
