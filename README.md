@@ -16,9 +16,9 @@ Peer2Learn foi desenvolvido com o kit de desenvolvimento Flutter, trazendo grand
 ### HACKATHON CPBR14 - DESAFIO MICROSOFT
 
 - Tema: "Educação – Inovações que transformem a forma de aprender dos estudantes."
-- ![Apresentação](https://1drv.ms/p/s!AnMhFuo3XQwlxTNQos-wZdrVZ-e0?e=RZzdAd)
-- Vídeo Pitch
-- Vídeo Demo
-- Link da Solução
+- ![Apresentação PPT](https://onedrive.live.com/view.aspx?resid=250C5D37EA162173!8883&ithint=file%2cpptx&authkey=!AFCiz7Bl2tVn57Q)
+- ![Vídeo Pitch](https://www.youtube.com/watch?v=VwSIb_t_Bck)
+- ![Vídeo Demo](https://www.youtube.com/shorts/6wBhgr_cXzY)
+- ![Link da Solução](https://1drv.ms/u/s!AnpiWgm66OzrcKxf3liiSqy2YEM?e=4q9rwp)
 
 Desenvolvedores: João Vitor Sant' Anna, Maria Eduarda Dionisio, Fabricio Esper, Luiz Lima e Felipe Cunha.
